@@ -174,5 +174,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-st.write(NB:
-"Après avoir saisi les informations du client, y compris le devis, ce client recevra directement le devis par e-mail.")
