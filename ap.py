@@ -135,7 +135,7 @@ def afficher_historique(enregistrements):
 def main():
     st.title("Application web pour l'envoi automatique des Devis d'Assurance 🚗 ")
     st.subheader(
-                "Après avoir saisi les informations du client, y compris le devis, ce client recevra directement le devis par e-mail.")
+                "NB: Après avoir saisi les informations du client, y compris le devis, ce client recevra directement le devis par e-mail.")
     
     # Utiliser le concept de "state" pour gérer les différentes pages
     page = st.sidebar.selectbox("Navigation", ["Accueil", "Envoyer E-mail", "Historique"])
