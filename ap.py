@@ -126,7 +126,8 @@ def main():
         st.session_state.enregistrements = []
 
     if page == "Accueil":
-        st.write("Bienvenue sur la page d'accueil.")
+        st.write("Bienvenue sur la page d'accueil COURTIER")
+        st.write("CETTE APPLICATION A ÉTÉ DÉVELOPPÉE PAR DJÉGUI WAGUÉ. EN CAS DE CONTRIBUTION, MERCI DE CONTACTER À L'ADRESSE SUIVANTE : dwague44@gmail.com")
 
     elif page == "Envoyer E-mail":
         with st.form("formulaire_email"):
