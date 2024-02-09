@@ -116,7 +116,7 @@ def afficher_historique(enregistrements):
 
 # Fonction principale
 def main():
-    st.title("Application de Bienvenue par E-mail")
+    st.title("Application Web pour l'envoi des Devis d'assurance 🚗 ")
     
     # Utiliser le concept de "state" pour gérer les différentes pages
     page = st.sidebar.selectbox("Navigation", ["Accueil", "Envoyer E-mail", "Historique"])
@@ -136,13 +136,13 @@ def main():
             email = st.text_input("E-mail:")
             fichier_pdf = st.file_uploader("Choisir un fichier PDF", type=["pdf"])
 
-            submitted = st.form_submit_button("Envoyer l'e-mail de bienvenue")
+            submitted = st.form_submit_button("Envoyer le devis")
 
             if submitted:
                 if nom and prenom and email and fichier_pdf:
                     # Appel de la fonction envoyer_email avec les valeurs des champs du formulaire
                     details_envoi = envoyer_email(nom, prenom, email, piece_jointe=fichier_pdf)
-                    st.success(f"E-mail de bienvenue envoyé à {email}")
+                    st.success(f"Devis envoyé à {email}")
 
                     # Ajouter les détails de l'envoi à l'historique
                     st.session_state.enregistrements.append(details_envoi)
