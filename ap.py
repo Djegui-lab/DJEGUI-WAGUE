@@ -160,7 +160,7 @@ def main():
                 if nom and prenom and email and fichier_pdf:
                     # Appel de la fonction envoyer_email avec les valeurs des champs du formulaire
                     details_envoi = envoyer_email(nom, prenom, email, piece_jointe=fichier_pdf)
-                    st.success(f"Devis envoyé à {email}")
+                    st.success(f"Devis envoyé à {nom}")
 
                     # Ajouter les détails de l'envoi à l'historique
                     st.session_state.enregistrements.append(details_envoi)
