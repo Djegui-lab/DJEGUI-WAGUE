@@ -152,7 +152,7 @@ def main():
             nom = st.text_input("Nom:")
             prenom = st.text_input("Prénom:")
             email = st.text_input("E-mail:")
-            fichier_pdf = st.file_uploader("Choisir un fichier PDF", type=["pdf"])
+            fichier_pdf = st.file_uploader("Choisir le devis pour l'envoi(PDF)", type=["pdf"])
 
             submitted = st.form_submit_button("Envoyer le devis")
 
