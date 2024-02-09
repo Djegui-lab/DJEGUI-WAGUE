@@ -106,6 +106,23 @@ Nous espérons que notre proposition correspondra à vos attentes.<br>
         "Date d'envoi": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
 
+
+
+
+# Image à afficher (le chemin est relatif au script)
+image_path = "djegui_wag.jpg"
+
+# Créer deux colonnes (colonne de gauche et colonne de droite)
+col1, col2 = st.columns([3, 1])
+
+
+# Éléments dans la colonne de droite (affiche l'image)
+with col2:
+    st.image(image_path, caption="AUTEUR / DJEGUI_WAGUE")
+
+
+
+
 # Fonction pour afficher l'historique
 def afficher_historique(enregistrements):
     st.title("Historique des Enregistrements")
