@@ -8,10 +8,10 @@ from datetime import datetime
 
 # Fonction pour envoyer un e-mail avec la nouvelle signature HTML dans le corps
 def envoyer_email(nom, prenom, email, piece_jointe=None):
-    smtp_server = "smtp.gmail.com"
-    port = 465  # Port sécurisé SSL pour Gmail
-    adresse_expediteur = "dwague44@gmail.com"  # Remplacez par votre adresse e-mail Gmail
-    mot_de_passe = "ahdxhsqsmsacafjv"  # Remplacez par votre mot de passe Gmail
+    smtp_server = "remplacer par votre code smtp"
+    port =   # Port sécurisé SSL pour Gmail
+    adresse_expediteur = "votre addresse mail"  # Remplacez par votre adresse e-mail Gmail
+    mot_de_passe = "mot de passe gmail"  # Remplacez par votre mot de passe Gmail
 
     sujet = f"Votre demande de devis pour l'assurance auto ! {nom}"
     corps = f"""<span style="color: black;">
